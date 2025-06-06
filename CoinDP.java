@@ -46,8 +46,8 @@ public class CoinDP {
 		System.out.println("Enter the total to make change: ");
 		amount = in.nextInt();
 		memory = new int[amount + 1];
-		for (int i = 0; i <= amount; i++)
-			memory[amount] = 0;
+                for (int i = 0; i <= amount; i++)
+                        memory[i] = 0;
 		for (int i = 0; i < denom.length; i++)
 			memory[denom[i]] = 1;
 		System.out.println("The minimum amount of coins required is "
