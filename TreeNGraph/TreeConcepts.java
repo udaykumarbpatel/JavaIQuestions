@@ -102,15 +102,15 @@ class TreeConcepts {
 				if (id < current.item) {
 					current = current.leftChild;
 					if (current == null) {
-						parent.leftChild = newNode;
-						parent.parent = parent;
+                                                parent.leftChild = newNode;
+                                                newNode.parent = parent;
 						return;
 					}
 				} else {
 					current = current.rightChild;
 					if (current == null) {
-						parent.rightChild = newNode;
-						parent.parent = parent;
+                                                parent.rightChild = newNode;
+                                                newNode.parent = parent;
 						return;
 					}
 				}
