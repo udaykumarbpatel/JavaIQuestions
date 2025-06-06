@@ -36,7 +36,7 @@ public class CoinDP {
 		int n;
 		int amount;
 		Scanner in = new Scanner(System.in);
-		System.out.println("Please enter the nuber of denom: ");
+		System.out.println("Please enter the number of denom: ");
 		n = in.nextInt();
 		denom = new int[n];
 		System.out.print("Enter the values of denoms in ascending order: ");
