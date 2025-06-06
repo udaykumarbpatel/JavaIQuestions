@@ -101,7 +101,7 @@ public class SudokuSolver {
 					used[board[x][i] - 1] = true;
 			}
 
-			// similarly we chck column
+			// similarly we check column
 			for (int i = 0; i < 9; i++) {
 				if (status[i][y] >= 1)
 					used[board[i][y] - 1] = true;
